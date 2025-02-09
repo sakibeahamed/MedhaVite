@@ -44,7 +44,7 @@ const Section1 = () => {
           <p style={{color:'white'}}>Mangaluru - 575003,</p>
           <p style={{color:'white'}}>Dakshina Kannada District, Karnataka</p>
           <p style={{color:'white'}}>+91 6361600211</p>
-          <p style={{color:'white'}}>contact@shreedevicollege.org</p>
+          <p style={{color:'white'}}>sditmcadept2022@gmail.com</p>
         </div>
 
         {/* Quick Links Section */}

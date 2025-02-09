@@ -116,7 +116,7 @@ const Section2 = () => {
               font-size: 40px !important;
             }
             p {
-              font-size: 1rem !important;
+              font-size: 0.8rem !important;
             }
             /* Adjust the main container for smaller screens */
             div[style*="width: 70%"] {
@@ -147,10 +147,10 @@ const Section2 = () => {
               width: 150px !important; /* Further reduce left image size */
             }
             h1 {
-              font-size: 30px !important;
+              font-size: 27px !important;
             }
             p {
-              font-size: 0.9rem !important;
+              font-size: 0.7rem !important;
             }
           }
         `}
@@ -173,10 +173,10 @@ const Section2 = () => {
             }
             /* Adjust text size and positioning for smaller screens */
             h1 {
-              font-size: 40px !important;
+              font-size: 35px !important;
             }
             p {
-              font-size: 1rem !important;
+              font-size: 0.9rem !important;
             }
             /* Adjust the main container for smaller screens */
             div[style*="width: 70%"] {
@@ -207,10 +207,10 @@ const Section2 = () => {
               width: 100px !important; /* Further reduce left image size */
             }
             h1 {
-              font-size: 30px !important;
+              font-size: 26px !important;
             }
             p {
-              font-size: 0.9rem !important;
+              font-size: 0.7rem !important;
             }
           }
         `}

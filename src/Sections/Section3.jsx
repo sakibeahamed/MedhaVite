@@ -551,89 +551,90 @@ Capture the moment, Launch the reel…!`,
 
       {/* Updated "Click here for cultural Events" button */}
       <div
-        style={{
-          position: "absolute",
-          bottom: "20px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          textAlign: "center",
-          width: isMobile ? "90%" : "600px",
-          cursor: "pointer",
-          ...(isMobile && {
-            position: "relative",
-            bottom: "auto",
-            left: "auto",
-            transform: "none",
-            marginTop: "20px",
-            width: "100%",
-            padding: "20px",
-          }),
-        }}
-      >
-        <Link
-  to="/Cultural"
   style={{
-    display: "block",
-    textDecoration: "none",
-    color: "white",
-    borderRadius: "10px",
-    padding: "20px",
-    boxShadow: "0 4px 10px rgba(0, 0, 0, 0.3)",
-    transition: "transform 0.3s ease, box-shadow 0.3s ease",
-    position: "relative", // Required for pseudo-element positioning
-    overflow: "hidden", // Ensure the blur effect doesn't overflow
-  }}
-  onMouseEnter={(e) => {
-    e.currentTarget.style.transform = "scale(1.05)";
-    e.currentTarget.style.boxShadow = "0 6px 15px rgba(0, 0, 0, 0.5)";
-  }}
-  onMouseLeave={(e) => {
-    e.currentTarget.style.transform = "scale(1)";
-    e.currentTarget.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.3)";
+    position: "absolute",
+    bottom: "20px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    textAlign: "center",
+    width: isMobile ? "90%" : "600px",
+    cursor: "pointer",
+    ...(isMobile && {
+      position: "relative",
+      bottom: "auto",
+      left: "auto",
+      transform: "none",
+      marginTop: "20px",
+      width: "100%",
+      padding: "20px",
+    }),
   }}
 >
-  {/* Pseudo-element for background image with opacity and blur */}
-  <div
+  <Link
+    to="/Cultural"
     style={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      backgroundImage: "url('/images/sec2.jpg')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      opacity: 0.7, // Reduce opacity
-      filter: "blur(1px)", // Add blur filter
-      zIndex: -1, // Place it behind the content
-    }}
-  ></div>
-
-  <h2
-    style={{
-      fontSize: "1.8rem",
-      color: "red",
-      fontWeight: "bold",
-      marginBottom: "10px",
-      textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-      fontFamily: "'AvengersFont', sans-serif", // Add your desired font family
-      wordSpacing: "7px",
-              letterSpacing: "1.9px",
-    }}
-  >
-     Cultural Events
-  </h2>
-  <p
-    style={{
-      fontSize: "0.8rem",
+      display: "block",
+      textDecoration: "none",
       color: "white",
-      textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+      borderRadius: "10px",
+      padding: "20px",
+      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.3)",
+      transition: "transform 0.3s ease, box-shadow 0.3s ease",
+      position: "relative", // Required for pseudo-element positioning
+      overflow: "hidden", // Ensure the blur effect doesn't overflow
+      backgroundColor: isMobile ? "rgba(0, 0, 0, 0.5)" : "transparent", // Add a semi-transparent background for mobile
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform = "scale(1.05)";
+      e.currentTarget.style.boxShadow = "0 6px 15px rgba(0, 0, 0, 0.5)";
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform = "scale(1)";
+      e.currentTarget.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.3)";
     }}
   >
-   Click here and explore our exciting cultural events!
-  </p>
-</Link>
-      </div>
+    {/* Pseudo-element for background image with opacity and blur */}
+    <div
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        backgroundImage: "url('/images/sec2.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        opacity: isMobile ? 0.5 : 0.7, // Adjust opacity for mobile
+        filter: isMobile ? "blur(2px)" : "blur(1px)", // Adjust blur for mobile
+        zIndex: -1, // Place it behind the content
+      }}
+    ></div>
+
+    <h2
+      style={{
+        fontSize: isMobile ? "1.5rem" : "1.8rem", // Adjust font size for mobile
+        color: "red",
+        fontWeight: "bold",
+        marginBottom: "10px",
+        textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+        fontFamily: "'AvengersFont', sans-serif", // Add your desired font family
+        wordSpacing: "7px",
+        letterSpacing: "1.9px",
+      }}
+    >
+      Cultural Events
+    </h2>
+    <p
+      style={{
+        fontSize: isMobile ? "0.7rem" : "0.8rem", // Adjust font size for mobile
+        color: "white",
+        textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+      }}
+    >
+      Click here and explore our exciting cultural events!
+    </p>
+  </Link>
+</div>
     </section>
   );
 };

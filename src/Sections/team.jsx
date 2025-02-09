@@ -246,18 +246,26 @@ const Team = () => {
 
   // Array of background images for the cards
   const cardImages = [
-    '/images/sabikecarddd.png',
-    '/images/background2.jpg',
-    '/images/background3.jpg',
-    '/images/background4.jpg',
-    '/images/background5.jpg',
-    '/images/background6.jpg',
-    '/images/background7.jpg',
-    '/images/background8.jpg',
-    '/images/background9.jpg',
-    '/images/background10.jpg',
-    '/images/background11.jpg',
-    '/images/background12.jpg',
+    '/images/c1.PNG',
+    '/images/c2.PNG',
+    '/images/c7.PNG',
+    '/images/c4.PNG',
+    '/images/c3.PNG',
+    '/images/c6.PNG',
+    '/images/c5.PNG',
+    '/images/c8.PNG',
+    '/images/c9.PNG',
+    '/images/c18.PNG',
+    '/images/c17.PNG',
+    '/images/c12.PNG',
+    '/images/c13.PNG',
+    '/images/c14.PNG',
+    '/images/c15.PNG',
+    '/images/c16.PNG',
+    '/images/c11.PNG',
+    '/images/c10.PNG',
+
+
   ];
 
   // Scroll to the top of the page when the component mounts
