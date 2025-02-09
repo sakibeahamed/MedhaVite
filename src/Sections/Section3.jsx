@@ -611,24 +611,26 @@ Capture the moment, Launch the reel…!`,
 
   <h2
     style={{
-      fontSize: "1.5rem",
-      color: "white",
+      fontSize: "1.8rem",
+      color: "red",
       fontWeight: "bold",
       marginBottom: "10px",
       textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-      fontFamily: "'Your Font Family', sans-serif", // Add your desired font family
+      fontFamily: "'AvengersFont', sans-serif", // Add your desired font family
+      wordSpacing: "7px",
+              letterSpacing: "1.9px",
     }}
   >
-    Click here for Cultural Events
+     Cultural Events
   </h2>
   <p
     style={{
-      fontSize: "1rem",
+      fontSize: "0.8rem",
       color: "white",
       textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
     }}
   >
-    Explore our exciting cultural events!
+   Click here and explore our exciting cultural events!
   </p>
 </Link>
       </div>

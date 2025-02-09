@@ -13,7 +13,7 @@ import Team from "./Sections/team";
 import Cultural from "./Sections/Cultural"; 
 import Register from "./Sections/Register"; 
 import Loader from "./Components/Navbar/Loader/Loader"; 
-
+import 'boxicons/css/boxicons.min.css';
 const styles = {
   App: {
     width: "100%",

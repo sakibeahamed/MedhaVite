@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./navbar.css";
-// import 'boxicons';
+import 'boxicons';
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

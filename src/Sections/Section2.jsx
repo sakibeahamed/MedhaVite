@@ -201,7 +201,7 @@ const Section2 = () => {
           }
           @media (max-width: 480px) {
             .superman-container img {
-              width: 100px !important; /* Further reduce Superman image size */
+              width: 70px !important; /* Further reduce Superman image size */
             }
             div[style*="left: 10%"] img {
               width: 100px !important; /* Further reduce left image size */
@@ -388,6 +388,7 @@ const Section2 = () => {
                     fontSize: "1.2rem",
                     marginTop: "20px",
                     color: "white",
+                    fontStyle:"italic",
                   }}
                 >
                   The dynamic minds of the MCA department at Shree Devi Institute of
